@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+.LandingPage {
+  display: grid;
+  grid-template-columns: repeat(10, 10vw);
+  grid-template-rows: repeat(10, calc(100vh / 6));
+  font-family: 'Press Start 2P', cursive;
+  background: url(https://media.giphy.com/media/ueVYG9Cg4zBu0/giphy.gif);
+  background-size: contain;
+}
+
+.LandingPage img,
+.LandingPage div {
+  align-self: stretch;
+  justify-self: stretch;
+}
+
+.LandingPage #title {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 6.5vmax;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  background-color: rgba(12, 219, 8, 0.7);
+  box-shadow: 5px 5px 5px 0px rgba(51,51,51,1);
+}
+
+.LandingPage #title span {
+  align-self: center;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.LandingPage #title small {
+  align-self: center;
+  text-align: center;
+  font-size: 2.5vw !important;
+}
